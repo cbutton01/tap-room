@@ -4,7 +4,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Description
 
-  * This app is a clone of the popular DigitalPour app :beer: which can be found at http://digitalpour.com/#home.  The goal is to make a useful tool for bar employees _and_ patrons. Patrons should be able to easily discern what beers are on tap currently, and information about those beers.  Employees will be able _sell_ pints and the UI will update appropriately (kegs will show a decrease in total beer).  When a keg runs out the user will be prompted to change the keg, and the UI will then show a full keg.
+  * This is a clone of the popular DigitalPour app :beer: which can be found at http://digitalpour.com/#home.  The goal is to make a useful tool for bar employees _and_ patrons. Patrons should be able to easily discern what beers are on tap currently, and information about those beers.  Employees will be able _sell_ pints and the UI will update appropriately (kegs will show a decrease in total beer).  When a keg runs out the user will be prompted to change the keg, and the UI will then show a full keg.
 
 ## Guidelines
 ###### _For user story_
