@@ -1,3 +1,29 @@
-<p>
-  new-beer works!
-</p>
+<div class="card">
+<div class="card-header bg-primary">
+  <h1>New Beer</h1>
+</div>
+  <div>
+    <label>Enter Beer Name:
+      <input #newName>
+    </label>
+  </div>
+  <div>
+    <label>
+      Brewery Name:
+      <input #newBrewery>
+    </label>
+  </div>
+  <div>
+    <label>
+      ABV:
+      <input type="number" #newABV>
+    </label>
+  </div>
+  <div>
+    <label>
+      IBU:
+      <input type="number" #newIBU>
+    </label>
+  </div>
+  <button (click)="submitForm(newName.value, newBrewery.value, newABV.value, newIBU.value)">Add</button>
+</div>

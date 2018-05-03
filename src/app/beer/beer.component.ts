@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Beers } from './../models/beer.model';
+import { KegComponent } from '../keg/keg.component';
 
 @Component({
   selector: 'app-beer',
@@ -8,8 +9,14 @@ import { Beers } from './../models/beer.model';
 })
 
 export class BeerComponent {
-  beer: Beers[] = [
-    new Beers('Appricot Blonde','Dry Dock', 5, 10),
-    new Beers('Milk Stout','Left Hand', 6, 6)
-  ];
+  @Input() childBeerList: Beers[];
+  @Output() clickSender = new EventEmitter();
+
+  editButtonClicked(beerToEdit: Beers){
+    this.clickSender.emit(beerToEdit);
+  }
+  
+  beer: Beers[] = [];
+
+
 }

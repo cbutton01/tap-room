@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Beers } from './models/beer.model';
-import { BeerComponent } from './beer/beer.component'
+import { BeerComponent } from './beer/beer.component';
+import { NewBeerComponent } from './new-beer/new-beer.component';
 
 @Component({
   selector: 'app-root',

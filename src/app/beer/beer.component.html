@@ -3,7 +3,7 @@
     <h3>Beers On Tap</h3>
   </div>
   <div class="card-body">
-    <div class="card" *ngFor="let currentBeer of beer">
+    <div class="card" *ngFor="let currentBeer of childBeerList">
       <div class="card-header bg-danger">
         <div class="row">
           <div class="col-sm-6">
@@ -21,13 +21,11 @@
             <h6>{{currentBeer.brewery}}</h6>
           </div>
           <div class="col-sm-6">
-            <svg height="100" width="30">
-              <polygon name="keg" points="0,0 30,0 30,100 0,100" fill="#535a66"/>
-              <polygon name="fill" points="5,5 25,5 25,95 5,95" fill="#00FF00"/>
-            </svg>
+            <app-keg></app-keg>
           </div>
         </div>
       </div>
+      <button (click)="editButtonClicked(currentBeer)">Edit</button>
     </div><!--end of beer card-->
   </div>
 </div>
