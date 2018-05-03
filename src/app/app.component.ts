@@ -10,4 +10,11 @@ import { NewBeerComponent } from './new-beer/new-beer.component';
 })
 export class AppComponent {
   title = 'Tap Room';
+  masterBeerList: Beers[] = [
+    new Beers('Appricot Blonde','Dry Dock', 5, 10),
+    new Beers('Milk Stout','Left Hand', 6, 6)
+  ];
+  addBeer(newBeer: Beers){
+    this.masterBeerList.push(newBeer);
+  }
 }

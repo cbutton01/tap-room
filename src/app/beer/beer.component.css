@@ -4,5 +4,13 @@
 }
 
 .card .card {
-  width: 400px;
+  width: 350px;
+}
+
+app-keg {
+  float: right;
+}
+
+button {
+  width: 100px;
 }

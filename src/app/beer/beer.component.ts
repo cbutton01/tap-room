@@ -11,12 +11,8 @@ import { KegComponent } from '../keg/keg.component';
 export class BeerComponent {
   @Input() childBeerList: Beers[];
   @Output() clickSender = new EventEmitter();
-
   editButtonClicked(beerToEdit: Beers){
     this.clickSender.emit(beerToEdit);
   }
   
-  beer: Beers[] = [];
-
-
 }
